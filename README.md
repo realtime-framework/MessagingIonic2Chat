@@ -10,7 +10,8 @@ The users that are not using the app when a new message is published will receiv
 
 [Realtime Messaging](https://framework.realtime.co/messaging/) is a cloud based message broker, enabling developers to build cross-platform apps that require realtime communication between devices.
 
-**NOTE: If you're looking for an Ionic 1 example checkout [https://github.com/realtime-framework/MessagingIonicChat](https://github.com/realtime-framework/MessagingIonicChat) **
+## Ionic 1
+If you're looking for the Ionic 1 example, checkout [https://github.com/realtime-framework/MessagingIonicChat](https://github.com/realtime-framework/MessagingIonicChat)
 
 ## Running this example
 The folowing sub-sections of this guide will show you how to build and run the Ionic/Realtime chat app.
