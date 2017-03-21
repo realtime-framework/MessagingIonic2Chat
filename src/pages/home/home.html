@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form id="login-form" class="list">
+                <div id="nicktext" class="input-label" [hidden]="spanvisible">Welcome {{currentlyStored}}!!!</div>
+                <input id="nickname" type="text" [(ngModel)]="nick" [ngModelOptions]="{standalone: true}" (keyup.enter)="updateStorage()" [hidden]="inputvisible" placeholder="Please insert your nickname!!!">  
+        </form>
+        <a id="chatrooms_button" class="button button-stable button-block" (click)="gotoChatRooms()" ng-disabled="chatroomsdisable">Chat Rooms</a>
+        <button id="connection_state" class="button button-stable button-block">{{isConnected}}</button>
+</ion-content>
+

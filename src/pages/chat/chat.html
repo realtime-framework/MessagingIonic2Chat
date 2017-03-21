@@ -1,0 +1,31 @@
+<!--
+  Generated template for the Chat page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{_ortc.selectedChannel}}</ion-title>
+  		<ion-buttons end>
+  		  <button class="button" (click)="compose()">
+  		    Compose
+  		  </button>
+  		</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list no-lines id="chatRooms-list2" class="listv">
+        <ion-list-header>
+          Messages
+        </ion-list-header>
+        <ion-item *ngFor="let message of channelMessages" style="width: 100%">
+        	<p class="bubble left" *ngIf="message.sender === user"><span style="font-size:20px;">{{message.sender}}:</span><br>{{message.msg}}</p>
+        	<p class="bubble right" *ngIf="message.sender !== user"><span style="font-size:20px;">{{message.sender}}:</span><br>{{message.msg}}</p>
+    	</ion-item>
+    </ion-list>
+</ion-content>
